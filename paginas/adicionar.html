@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adicionar Livro</title>
+	<meta charset="utf-8">
+	<!--Importar Icon da Google-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importar arquivo css-->
+    <link rel="stylesheet" type="text/css" href="../css/contacto.css">
+      <link rel="shortcut icon" href="../img/IconDeveloper.png">    
+      <link rel="stylesheet" href="../css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/padrao.css">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const token = localStorage.getItem('authToken');
+        if (!token) {
+            window.location.href = 'login.html';
+        }
+    });
+</script>
+
+<body>
+
+<nav class="blue">
+	<div class="nav-wrapper container">
+
+		<a href="index.html"><img src="../img/logo.png" alt="" class="brand-logo"></a>
+		<a href="" class="button-collapse" data-activates="mobile"></a>
+
+		<!--Menu para Desktop-->
+		<ul class="right hide-on-med-and-down">
+			<li><a href="../index.html">Pagina Inicial</a></li>
+			<li><a href="../biblioteca.html">Biblioteca</a></li>
+			<li><a href="cursos.html">Cursos</a></li>
+			<li><a href="adicionar.html">Publicar Livro</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+		</ul>
+	</div>
+	
+</nav>
+
+<div class="row">
+	<div class="col s12 m6 push-m3"> <!--Criando a coluna do formulario-->
+		<fieldset>
+			<legend><h4 class="light">Novo Livro</h4></legend> <!--Nome do formulario-->
+		
+		<form action="create.php" method="POST" enctype="multipart/form-data">
+			
+			<div class="input-field col s12"> <!--campos do formulario-->
+				<input type="text" name="titulo" id="titulo" required autofocus> <!--Campo nome-->
+				<label id="titulo">Titulo do Livro</label>
+				<br><br>
+			</div>
+		   
+			<label>Disciplina</label><br><br>
+  			<select class="browser-default" name="disciplina" required>
+    			<option value="" disabled selected>Escolhe a disciplina</option>
+    			<option value="Matemática">Matemática</option>
+    			<option value="Física">Física</option>
+    			<option value="Psicologia">Psicologia</option>
+    			<option value="Filosofia">Filosofia</option>
+    			<option value="Química">Química</option>
+    			<option value="Língua Portugesa">Língua Portugesa</option>
+    			<option value="FAI">FAI</option>
+    			<option value="Biologia">Biologia</option>
+    			<option value="Empreendedorismo">Empreendedorismo</option>
+    			<option value="Economia">Economia</option>
+    			<option value="Direito">Direito</option>
+    			<option value="Língua Inglesa">Língua Inglesa</option>
+  			</select>
+
+  			<br><br>
+			<p class="input-field col s12">Link do livro</p>
+			<div class="input-field col s12"> <!--campos do formulario-->
+				<input type="file" name="link" required class="btn blue"> <!--Campo sobrenome-->
+				<hr>
+				<br><br>
+			</div>
+			
+			<button  type="submit" class="btn blue" name="btn-cadastrar">Cadastrar</button>
+			<button  type="reset" class="btn green">Limpar Campos</button>
+
+		</form>
+		
+	</div>
+	</fieldset>
+</div>
+
+<div class="row">
+	<br><br><br>
+	<footer class="col s12 blue">
+		<div>
+			<p>&copy; 2019-Biblioteca virtual, todos os direitos reservados </p>
+			<span class="rop">Este site é um projecto em sua primeira versão, da biblioteca virtual desenvolvido pelo Evanilson Victor. Serve para facilitar o acesso aos livros e cursos, quer sejam de referências nacionais ou estrangeiras </span>
+		
+			<ul class="social grey-text text-lighten-4 center">
+				
+				<li>
+					<a href="http://twitter.com/Kenny pascoal" title="Twitter" target="_blank">
+						<img src="../img/twitter.png" title="Twitter" alt="Twitter">
+					</a>
+
+				</li>
+				<li>
+					<a href="http://facebook.com/Kenny pascoal" title="Faccebook" target="_blank">
+						<img src="../img/facebook.png" title="Faccebook" alt="Faccebook">
+					</a>
+				</li>
+				<li>
+					<a href="http://yuotube.com/Kenny pascoal" title="Youtube" target="_blank">
+						<img src="../img/youtube.png" title="Youtube" alt="youtube">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+<!--Importando arquivos jquery e javascript-->
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/materialize.min.js"></script>
+
+<!--Configuração jquery e javascript-->
+<script type="text/javascript">
+	
+</script>
+
+</body>
+</html>

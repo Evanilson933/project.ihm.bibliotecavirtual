@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.principal{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 10px;
+}
+.areas li{
+	background: #ccc;
+	margin-top:10px;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	
+}
+.aside1{
+	width: 100px;
+}
+
+

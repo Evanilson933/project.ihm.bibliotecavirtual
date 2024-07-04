@@ -1,0 +1,36 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para buscar e renderizar os livros
+    function loadBooks() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'data/books.json', true);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                const books = JSON.parse(xhr.responseText);
+                const booksContainer = document.getElementById('booksContainer');
+                booksContainer.innerHTML = '';
+
+                books.forEach(book => {
+                    const bookCard = document.createElement('div');
+                    bookCard.className = 'col s12 m6';
+                    bookCard.innerHTML = `
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title"><b>${book.title}</b></span>
+                                <hr>
+                                <p>${book.description}</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="${book.file}" target="_blank">Ver detalhes</a>
+                            </div>
+                        </div>
+                    `;
+                    booksContainer.appendChild(bookCard);
+                });
+            }
+        };
+        xhr.send();
+    }
+
+    // Chamar a função para carregar os livros
+    loadBooks();
+});

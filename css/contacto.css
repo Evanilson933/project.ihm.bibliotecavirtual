@@ -1,0 +1,82 @@
+/*ENDERECO*/
+.pagina{
+	width: 900px;
+	margin: auto;
+
+}
+.endereco li, address{
+	line-height: 50px;
+	font-style: italic;
+	border-bottom: 1px #eee solid;
+	list-style: none;
+	text-align: left;
+}
+
+.endereco a{
+	text-decoration: none;
+}
+.endereco a:hover{
+	color: red;
+}
+
+.endereco img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 5x;
+}
+
+
+.onde{
+	width: 435px;
+	float: left; 
+}
+
+.caixa{
+	width: 435px;
+	float: left;
+	margin-left: 20px;
+}
+/*formulario*/
+
+input[type="text"],[type="email"], textarea{
+	width: 100%;
+	padding: 15px;
+	background: #e9e9e9;
+	border: 1px solid #ddd;
+	margin: 1%;
+	text-align: left;
+}
+
+
+footer p{
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: bold;
+
+}
+
+footer span{
+font-size: 0.8em;
+}	
+footer img{
+	width: 46px;
+	height: 46px;
+}
+
+
+.rodap{
+	width: 100%;
+	clear: both;
+}
+/*social*/
+.social li{
+	display: inline-block;
+	margin: 1%;
+}
+.social li a{
+	padding: 10px;
+}
+.fale{
+	border-bottom: dashed;
+}

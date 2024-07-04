@@ -1,0 +1,105 @@
+<!DOCYTPE html>
+<html lang="pt-br">
+<head>
+	<title>Biblioteca Virtual</title>
+	<meta charset="utf-8">
+	<!--Importar Icon da Google-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importar arquivo css-->
+    <link rel="shortcut icon" href="../img/AQUA ICONS DRIVE HD.png"> 
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" type="../text/css" href="css/padrao.css">
+    <link rel="stylesheet" type="text/css" href="../css/contacto.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const token = localStorage.getItem('authToken');
+        if (!token) {
+            window.location.href = 'login.html';
+        }
+    });
+</script>
+
+<body>
+
+<nav class="blue">
+	<div class="nav-wrapper container">
+
+		<a href="index.html"><img src="../img/logo.png" alt="" class="brand-logo"></a>
+		<a href="" class="button-collapse" data-activates="mobile"></a>
+
+		<!--Menu para Desktop-->
+		<ul class="right hide-on-med-and-down">
+			<li><a href="../index.html">Pagina Inicial</a></li>
+			<li><a href="../biblioteca.html">Biblioteca</a></li>
+			<li><a href="cursos.html">Cursos</a></li>
+			<li><a href="adicionar.html">Cadastro</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+		</ul>
+	</div>
+	
+</nav>
+
+<div class="row"></div>
+
+<!--Informações sobre o site-->
+<section class="row">
+	<article class="col s12">
+		<div class="card">
+			<div class="card-content">
+				<span class="card-title"><b>Sobre a Biblioteca Virtual</b></span>
+				<hr>
+				<p>Esta web site foi desenvolvida pelo Evanilson Maela Victor.<br><br>
+A biblioteca virtual visa auxiliar no sistema de aprendizagem  angolano  mediante algumas dificuldades que temos observado como:<br><br>
+1º  Na consepção  de alguns conceitos científicos.<br><br>
+2º Falta de bibliotecas escolares.<br><br>
+3º Livros a um valor muito alto, etc.<br><br>
+Desponibilizamos diferentes livros para usuários infantis á adultos, permitindo baixar o livro de forma rápida,com boa qualidade de imagem para leitura, video cursos e cursos em pdf das mais diversas áreas do saber.<br>
+</p>
+				
+			</div>
+			
+		</div>
+	</article>
+</section>
+
+<div class="row">
+	<br><br><br>
+	<footer class="col s12 blue">
+		<div>
+			<p>&copy; 2019-Biblioteca virtual, todos os direitos reservados </p>
+			<span>Este site é um projecto em sua primeira versão, da biblioteca virtual desenvolvido pelo Evanilson Victor. Serve para facilitar o acesso aos livros e cursos, quer sejam de referências nacionais ou estrangeiras </span>
+		
+			<ul class="social grey-text text-lighten-4 center">
+				
+				<li>
+					<a href="http://twitter.com/Kenny pascoal" title="Twitter" target="_blank">
+						<img src="../img/twitter.png" title="Twitter" alt="Twitter">
+					</a>
+
+				</li>
+				<li>
+					<a href="http://facebook.com/Evanilson Victor" title="Faccebook" target="_blank">
+						<img src="../img/facebook.png" title="Faccebook" alt="Faccebook">
+					</a>
+				</li>
+				<li>
+					<a href="http://yuotube.com/Adão Serafim" title="Youtube" target="_blank">
+						<img src="../img/youtube.png" title="Youtube" alt="youtube">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+<!--Importando arquivos jquery e javascript-->
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/materialize.min.js"></script>
+
+<!--Configuração jquery e javascript-->
+<script type="text/javascript">
+	$('.slider').slider();
+</script>
+
+</body>
+</html>

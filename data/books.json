@@ -1,0 +1,17 @@
+[
+    {
+        "title": "A arte de Pensar Vol 1",
+        "description": "O que é a filosofia? Será muito mais fácil responder a esta pergunta no final do ano lectivo, tal como é mais fácil saber o que é a biologia depois de a ter estudado. Mas é importante saber desde já alguma coisa sobre a filosofia. Para isso, vamos começar por percorrer rapidamente a sua história.",
+        "file": "livros/filosofia/Arte de pensar Vol 1.pdf"
+    },
+    {
+        "title": "Livro de Empreendedorismo",
+        "description": "Dolabela (2008, p. 65) afrma que em virtude das contribuições de estudiosos de diferentes áreas do conhecimento, há muitas defnições do termo empreendedorismo, já que os diferentes especialistas utilizam os princípios de suas próprias áreas de interesse para construir o conceito.",
+        "file": "livros/empreendedorismo/081112_empreend.pdf"
+    },
+    {
+        "title": "A arte de Pensar Vol 2",
+        "description": "Num certo sentido, todos sabemos o que á a arte, pois conhecemos várias formas de arte, como a música ou a pintura. Se bem que algumas obras de arte não sejam belas, a beleza é um aspecto importante da arte. Por sua vez, a beleza está relacionada com a estética.",
+        "file": "livros/filosofia/Arte de pensar Vol 2.pdf"
+    }
+]
